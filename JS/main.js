@@ -11,7 +11,7 @@ function inicio() {
 
     //Crear la interfaz usando el DOM
     document.getElementsByTagName("body")[0].innerHTML =
-        "<div class='container'><div class='logoDiv'><img id='logo' src='../media/logo.png'></div><form id='formLoginSignup' action='' method='POST'><div class='formDiv'><div><div class='credDiv'><label for='user'>Usuario</label><input id='userLogin' type='text' name='user' value='ASPIRANTE' required></div><div class='credDiv'><label for='password'>Password</label><input id='passLogin' type='password' name='password' placeholder='******' required></div></div></div><div class='buttonsDiv'><input id='loginButton' type='button' value='Login' name='login'><input id='registroButton' type='button' value='Registro' name='registro'></div></form></div>";
+        "<div class='container'><div class='logoDiv'><img id='logo' src='./media/logo.png'></div><form id='formLoginSignup' action='' method='POST'><div class='formDiv'><div><div class='credDiv'><label for='user'>Usuario</label><input id='userLogin' type='text' name='user' value='ASPIRANTE' required></div><div class='credDiv'><label for='password'>Password</label><input id='passLogin' type='password' name='password' placeholder='******' required></div></div></div><div class='buttonsDiv'><input id='loginButton' type='button' value='Login' name='login'><input id='registroButton' type='button' value='Registro' name='registro'></div></form></div>";
 
 
     //Gestión botones login y registro
