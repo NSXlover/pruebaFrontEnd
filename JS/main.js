@@ -88,6 +88,8 @@ async function realizarRegistro(e) {
                 user = user + '1';
             }
 
+            alert("El usuario a crear es " + user)
+
             //creamos el usuario con su usuario y contraseña
             const userData = {user:user, pass:pass};
 
