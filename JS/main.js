@@ -131,6 +131,7 @@ function login(e) {
 
     // Crear url a la base de datos
     const login = url + 'login';
+    console.log("URL para el login " + login)
 
     fetch(login, {
         method: 'POST',
