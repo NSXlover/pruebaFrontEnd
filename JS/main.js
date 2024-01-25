@@ -88,10 +88,9 @@ async function realizarRegistro(e) {
                 user = user + '1';
             }
 
-            alert("El usuario a crear es " + user)
 
             //creamos el usuario con su usuario y contraseña
-            const userData = {user:user, pass:pass};
+            const userData = { user: user, pass: pass };
 
             //URL para crear el usuario
             const urlCreateUser = url + 'createUser';
@@ -110,6 +109,8 @@ async function realizarRegistro(e) {
                         console.error('Error al crear el usuario:', result.error);
                     } else {
                         alert('Usuario creado exitosamente:', result);
+                        alert("El usuario a crear es " + user);
+
                     }
                 })
                 .catch(error => {
@@ -136,7 +137,7 @@ function login(e) {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ usuario, pass }),  
+        body: JSON.stringify({ usuario, pass }),
     })
         .then(response => response.json())
         .then(result => {
