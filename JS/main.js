@@ -154,6 +154,7 @@ function login(e) {
                 //Entramos al login
                 loginExitoso();
             } else {
+                alert("Usuario y/o contraseña no válidos");
                 console.log('Error en el inicio de sesión:', result.message);
             }
         })
