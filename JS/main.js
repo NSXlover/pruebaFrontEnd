@@ -139,7 +139,13 @@ function login(e) {
         },
         body: JSON.stringify({ usuario, pass }),
     })
-        .then(response => response.json())
+        .then(response => {
+            console.log(response); // Agrega este console.log
+            if (!response.ok) {
+                throw new Error('Network response was not OK');
+            }
+            return response.json();
+        })
         .then(result => {
             // Manejar la respuesta del backend
             console.log(result);
