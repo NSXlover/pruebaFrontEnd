@@ -182,7 +182,7 @@ function loginExitoso() {
         console.log(nuevaPregunta);
 
         // Crear url a la base de datos
-        const urlGetID = url + 'getUserID/${usuario}';
+        const urlGetID = `${url}getUserID/${usuario}`;
 
         //Realizar consulta para obtener el id del usuario
         const ID = 0;
@@ -206,7 +206,7 @@ function loginExitoso() {
             });
 
         //Ahora almacenamos la pregunta
-        const urlAddQuestion = url + 'addQuestion/${ID}/${encodeURIComponent(nuevaPregunta)}';
+        const urlAddQuestion = `${url}addQuestion/${ID}/${encodeURIComponent(nuevaPregunta)}`;
         fetch(urlAddQuestion, {
             method: 'GET',
         })
