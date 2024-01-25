@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    padding: 40px;
+    background-color: rgb(146, 213, 255);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 25dvh repeat(2, 30dvh);
+}
+
+.logoDiv {
+    grid-row: 1/2;
+
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+#logo {
+    border-radius: 50%;
+    height: 100%;
+    width: auto;
+    border: 3px solid black;
+}
+
+.formDiv {
+    grid-row: 2/3;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.credDiv {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.credDiv input {
+    height: 50px;
+    width: 25vw;
+    margin: 0 50px;
+}
+
+.buttonsDiv {
+    grid-row: 3/4;
+
+    height: 100%;
+    display: flex;
+    place-content: center;
+}
+
+.buttonsDiv input {
+    height: 60px;
+    width: 10vw;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: start;
+    margin: 0 150px;
+    padding: 0 10px;
+}
+
+input {
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+input:focus {
+    border: 3px solid blue;
+}
+
+label {
+    font-size: 20px;
+}
+
+#formLoginSignup {
+    display: grid;
+    place-content: center;
+}
+
+#formLoginSignup input {
+    margin: 0 15px;
+}
+
+#parteSuperior {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+#frameCamara {
+    height: 55dvh;
+    margin: 25px;
+    
+}
+
+#camara{
+    height: 100%;
+    width: 100%;
+    border: 3px solid grey;
+    background-color: white;
+    border-radius: 25px;
+}
+
+#botonera{
+    display: flex;
+    justify-content: center;
+}
+#botonera input{
+    margin: 0 20px;
+}
+
+#btnLogOut{
+    height: 50px;
+    font-size: 15px;
+    margin-left: 25px;
+    background-color: rgb(108, 108, 108);
+    color: white;
+}
+
+#textoPreguntas{
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
