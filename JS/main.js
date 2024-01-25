@@ -147,6 +147,7 @@ function login(e) {
             return response.json();
         })
         .then(result => {
+            console.log(result);
             // Manejar la respuesta del backend
             console.log(result);
             if (result.authenticated) {
