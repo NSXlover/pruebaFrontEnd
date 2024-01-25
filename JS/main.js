@@ -109,7 +109,7 @@ async function realizarRegistro(e) {
                         console.error('Error al crear el usuario:', result.error);
                     } else {
                         alert('Usuario creado exitosamente:', result);
-                        alert("El usuario a crear es " + user);
+                        console.log("El usuario a crear es " + user);
 
                     }
                 })
