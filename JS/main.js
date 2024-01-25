@@ -90,7 +90,7 @@ async function realizarRegistro(e) {
 
 
             //creamos el usuario con su usuario y contraseña
-            const userData = { user: user, pass: pass };
+            const userData = { usuario: user, pass: pass };
 
             //URL para crear el usuario
             const urlCreateUser = url + 'createUser';
