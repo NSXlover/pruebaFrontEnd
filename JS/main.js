@@ -151,16 +151,16 @@ function login(e) {
             // Manejar la respuesta del backend
             console.log(result);
             if (result.authenticated) {
-                console.log('Inicio de sesión exitoso');
+                alert('Inicio de sesión exitoso');
                 //Entramos al login
                 loginExitoso();
             } else {
                 alert("Usuario y/o contraseña no válidos");
-                console.log('Error en el inicio de sesión:', result.message);
+                alert('Error en el inicio de sesión:', result.message);
             }
         })
         .catch(error => {
-            console.error('Error al realizar la solicitud:', error);
+            alert('Error al realizar la solicitud:', error);
         });
 
 }
