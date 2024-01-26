@@ -133,7 +133,7 @@ function login(e) {
     const login = url + 'login';
 
     fetch(login, {
-        method: 'GET',
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
